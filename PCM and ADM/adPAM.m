@@ -1,0 +1,9 @@
+function r = adPAM(signal)
+Tsymbol=40;
+Tsample=1;
+Tc=4;
+Es=1;
+fc=1/Tc;
+t = 1:Tsymbol;
+fer = sqrt(2*Es/Tsymbol)*cos(2*pi*fc*t);
+r = signal*fer;
